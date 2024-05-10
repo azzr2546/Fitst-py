@@ -156,85 +156,112 @@
 # STRING METHODS
 
 # String are immutable
-a ="Apple"
+# a ="Apple"
 
-# check the length
-print(len(a))
-print(a)
+# # check the length
+# print(len(a))
+# print(a)
 
-# change all char to uppercase
-print(a.upper())
+# # change all char to uppercase
+# print(a.upper())
 
-# change all char to lowercase
-print(a.lower())
+# # change all char to lowercase
+# print(a.lower())
 
-# remove unwanted char or symble from this obj
-b = "Apple!!!!!!!"
-print(b)
-print(b.rstrip("!"))
+# # remove unwanted char or symble from this obj
+# b = "Apple!!!!!!!"
+# print(b)
+# print(b.rstrip("!"))
 
-# replace
-c = "Apple 2"
-print(c)
-print(c.replace("Apple 2","Apple"))
+# # replace
+# c = "Apple 2"
+# print(c)
+# print(c.replace("Apple 2","Apple"))
 
-# convert to list
-d = "Apple1 Apple2 Apple3"
-print(d)
-print(d.split(" "))
+# # convert to list
+# d = "Apple1 Apple2 Apple3"
+# print(d)
+# print(d.split(" "))
 
-# convert first letter to uppercase and other letters to lowercase of the paragraph
-e = "appLe iS tHe most SecUre cOmpany."
-print(e)
-print(e.capitalize())
+# # convert first letter to uppercase and other letters to lowercase of the paragraph
+# e = "appLe iS tHe most SecUre cOmpany."
+# print(e)
+# print(e.capitalize())
 
-# Aline center
-f = "Apple is the most secure company."
-print(f)
-print(f.center(50))
-print(len(f))
-print(len(f.center(50)))
+# # Aline center
+# f = "Apple is the most secure company."
+# print(f)
+# print(f.center(50))
+# print(len(f))
+# print(len(f.center(50)))
 
-# Counting
-ab = "Apple is the most secure company, Apple company is also called iPhone company, Apple Lounch 1 model of phone every year."
-print(ab)
-print(ab.count("Apple"))
+# # Counting
+# ab = "Apple is the most secure company, Apple company is also called iPhone company, Apple Lounch 1 model of phone every year."
+# print(ab)
+# print(ab.count("Apple"))
 
-# ENDINGS OF THE OBJECT CHECK IF THE OBJECT IS END WITH GIVEN OBJ THEN IS SHOW TRUE ELSE FALSE
-abc = "Apple is the most secure company !!!"
-print(abc)
-print(abc.endswith("!!!"))
-print(abc.endswith("ab"))
+# # ENDINGS OF THE OBJECT CHECK IF THE OBJECT IS END WITH GIVEN OBJ THEN IS SHOW TRUE ELSE FALSE
+# abc = "Apple is the most secure company !!!"
+# print(abc)
+# print(abc.endswith("!!!"))
+# print(abc.endswith("ab"))
 
-# IS THE GIVEN OBJ IS END WITH GIVEN INDEX NUMBER (TRUE OR FALSE)
-abcd = "Apple is the most secure company !!!"
-print(abcd)
-print(abcd.endswith("is",3,8))
-print(abcd.endswith("is",3,7))
+# # IS THE GIVEN OBJ IS END WITH GIVEN INDEX NUMBER (TRUE OR FALSE)
+# abcd = "Apple is the most secure company !!!"
+# print(abcd)
+# print(abcd.endswith("is",3,8))
+# print(abcd.endswith("is",3,7))
 
-# find the index of given first obj
-print(abcd.find("is"))
+# # find the index of given first obj
+# print(abcd.find("is"))
 
-# if the given obj is not available in find method the its return -1 index so we can use index to check the error message
-print(abcd.find("isss"))
-# print(abcd.index("isss"))
+# # if the given obj is not available in find method the its return -1 index so we can use index to check the error message
+# print(abcd.find("isss"))
+# # print(abcd.index("isss"))
 
-# checking the string is write with A-Z,a-z,0-9 its return true or false
-ba = "WelcomeToConsole1"
+# # checking the string is write with A-Z,a-z,0-9 its return true or false
+# ba = "WelcomeToConsole1"
 
-# here we add space so it will return false
-bac = "Welcome To Console1"
-print(ba)
-print(ba.isalnum())
-print(bac.isalnum())
+# # here we add space so it will return false
+# bac = "Welcome To Console1"
+# print(ba)
+# print(ba.isalnum())
+# print(bac.isalnum())
 
-# checking the string is write with A-Z,a-z its return true or false
-bc = "WelcomeToConsole"
-bca = "WelcomeToConsole1"
-print(bc)
-print(bc.isalpha())
-print(bca)
-print(bca.isalpha())
+# # checking the string is write with A-Z,a-z its return true or false
+# bc = "WelcomeToConsole"
+# bca = "WelcomeToConsole1"
+# print(bc)
+# print(bc.isalpha())
+# print(bca)
+# print(bca.isalpha())
+
+# # checking the string is in lowercase its return true or false
+
+# bcd = "welcome to console"
+# bcad = "Welcome to console"
+# print(bcd)
+# print(bcd.islower())
+# print(bcad)
+# print(bcad.islower())
+
+# # if the string is print able then its return true else false
+# bcda = "Welcome To Console"
+# bb = "Welcome to console\n apple"
+# print(bcda)
+# print(bcda.isprintable())
+# print(bb)
+# print(bb.isprintable())
+
+# # cheching to the content is title
+# print(bcda)
+# print(bcda.istitle())
+
+# # convert to tital case
+# print(bb)
+# print(bb.title())
+
+
 
 
 
