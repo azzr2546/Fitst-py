@@ -261,11 +261,96 @@
 # print(bb)
 # print(bb.title())
 
+# STATEMENTS
+# IF ELSE STATEMENT
+# a = int(input("Enter your age: "))
+# print("Your age is:",a)
 
+# # Conditional operators
+# # >, <, >=, <=, ==, !=
 
+# if(a>18):
+#     print("You can drive")
+    
+# else:
+#     print("You cannot drive")
 
+# applePrice = 210
+# budget = int(input("Enter your budget: "))
+# if  (budget > applePrice):
+#     print("Alexa, add 1 kg of Apples to the cart.")
+      
+# else:
+#     print("Alexa, do not add Apples to the cart.")
+#     print("You don't have budget")
 
+# num = int(input("Enter the value of number: "))
 
+# if (num < 0):
+#     print("Number is negative.")
+# elif (num == 0):
+#     print("Number is Zero.")
+# elif (num == 999):
+#     print("Number is Special")
+# else:
+#     print("Number is positive")
+# print("I am happy now")
 
+# NESTED IF STATEMENT
 
+# num = int(input("Enter any of number: "))
+# if (num < 0):
+#     print("Number is negative")
+# elif (num > 0):
+#     if (num <= 10):
+#         print("Number is between 1-10")
+#     elif (num > 10 and num <= 20):
+#         print("Number is between 11-20")
+#     else:
+#         print("Number is greater than 20")
+# else:
+#     print("Number is zero")
+
+# LOOPS
+
+# name = "Apple"
+# for i in name:
+#     print(i)
+#     if (i=="l"):
+#         print("This is something special!")
+
+# colors = ["Red", "Green", "Blue", "Yellow"]
+# for color in colors:
+#     print(color)
+#     for i in color:
+#         print(i)
+
+# Range in loop
+# for k in range(5):
+#     print(k)
+# for c in range(0,20000):
+#     print(c + 1)
+
+# skipping the number between 
+# for k in range(1, 12, 2):
+#     print(k)
+
+# WHILE LOOP
+# i = 0
+# while(i<=10):
+#     print(i)
+#     i = i + 1
+# print("Done with the loop")
+
+# i = int(input("Enter the number: "))
+# while(i <= 38):
+#     i = int(input("Enter the number: "))
+#     print(i)
+    
+# print("Done with the loop")
+
+count = 5
+while (count > 0):
+    print(count)
+    count = count - 1
 
