@@ -349,8 +349,243 @@
     
 # print("Done with the loop")
 
-count = 5
-while (count > 0):
-    print(count)
-    count = count - 1
+# count = 5
+# while (count > 0):
+#     print(count)
+#     count = count - 1
+    
+# while with else
+# count = 5
+# while (count > 0):
+#     print(count)
+#     count = count - 1
+
+# # when the while statement is end it will print else
+
+# else:
+#     print("I am inside else")
+
+# DO WHILE LOOP
+# i = 0
+# while True:
+#     print(i)
+#     i = i + 1
+#     if(i%100 == 0):
+#         break
+
+# Break Statement
+# for i in range(12):
+#     if (i == 10):
+#         break
+#     print("5 X", i+1, "=", 5 * (i+1))
+    
+# print("Left and go the Loop")
+
+# Continue Statement
+# for i in range(12):
+#     if (i == 10):
+#         print("Skip the iteration")
+#         continue
+#     print("5 X", i, "=", 5 * i)
+
+# # FUNCTIONS
+# # TWO TYPES OF FUNCTION 
+# # 1. Built-in function{min(),max(),len(),sum(),type(,etc)}
+# # 2.User-define function which user can create ehich is create in blow dowm
+
+# # NOW WE CAN CREATE THE FUNCTION FOR THIS BECAUSE WE DONT HAVE TO WRITE AGAIN AND AGAIN
+# def calculateGmean(a,b):
+#     mean = (a*b)/(a+b)
+#     print(mean)
+    
+# def isGreater(a, b):
+#     if(a>b):
+#        print("First number is greater")
+#     else:
+#        print("Second number is greater or equal")
+
+# a = 9
+# b = 8
+# # if(a>b):
+# #     print("First number is greater")
+# # else:
+# #     print("Second number is greater or equal")
+# # gmean1 = (a*b)/(a+b)
+# # print(gmean1)
+# # now we will just call the function instead of re write the formula again and again
+# calculateGmean(a, b)
+# isGreater(a, b)
+
+# c = 8
+# d = 74
+
+# # if(c>d):
+# #     print("First number is greater")
+# # else:
+# #     print("Second number is greater or equal")
+# # gmean2 = (c*d)/(c+d)
+# # print(gmean2)
+# # now we will just call the function instead of re write the formula again and again
+# calculateGmean(c, d)
+# isGreater(c, d)
+
+
+# FUNCTION ARGUMENTS AND RETURN STATEMENT
+
+# def average(a, b):
+#     print("The average is ", (a+b)/2)
+    
+# average(4, 6)
+
+# def average(a=9, b=1):
+#     print("The average is ", (a+b)/2)
+    
+# average()
+
+# def average(a=9, b=1):
+#     print("The average is ", (a+b)/2)
+# if I will add the value ao a,b here it will ignore first values
+# average(1, 5)
+
+# def average(a=9, b=1):
+#     print("The average is ", (a+b)/2)
+# # or we can add just one value 
+# average(a=5)
+# # or we can add b value
+
+# def average (*numbers):
+#     # print(len(numbers))
+#     # print(type(numbers))
+#     sum = 0
+#     for i in numbers:
+#         sum = sum + i
+#     print("Average is: ",sum/len(numbers))
+    
+# average(4,5,7)
+
+# def name(**name):
+#     print("Hello,", name["fname"],
+# name["mname"], name["lname"])
+    
+# name(mname = "Buchnan", lname = "Barnes",
+#      fname = "James")
+
+
+# PYTHON LIST
+
+# l = [2,4,5]
+# print(l)
+# print(type(l))
+
+# # we can aslo add any type in list
+# marks = [3, 4, 5, "Apple", True]
+# print(marks)
+# print(type(marks))
+# # list index
+# # print(marks[0])
+# # print(marks[1])
+# # print(marks[2])
+# # print(marks[3])
+# # print(marks[4])
+
+# # negative index
+# print(marks[-3])
+
+# # Positive index
+# print(marks[len(marks)-2]) 
+
+# # Positive index
+# print(marks[5-2])
+
+# # Positive index
+# print(marks[3])
+
+# if 7 in marks:
+#     print("Yes")
+    
+# else:
+#     print("No")
+    
+# if "Apple" in marks:
+#     print("Yes")
+    
+# else:
+#     print("No")
+
+# Same thing applies for string ass well!
+# if "le" in "Apple":
+#     print("Yes")
+
+# marks = [3, 4, 5, "Apple", True, 8, 11, 13, 22, 32]
+# print(marks)
+# print(marks[1:9])
+# print(marks[1:9:2])
+
+# LIST COMPREHESION
+# lst = [i for i in range(10)]
+# print(lst)
+
+# # here we are *ing index to index
+# lst = [i*i for i in range(10)]
+# print(lst)
+
+# # here we add condition if the %of 2 is = 0 just print that numbers
+# lst = [i*i for i in range(10) if
+#        i%2==0]
+# print(lst)
+
+# LIST METHODS
+
+# append method is for add the obj in last index
+l = [12,10,63,1,2,3,4,6,1,1,1]
+print(l)
+# l.append(9)
+# print(l)
+
+# sort method is for assending and decending order method
+# l.sort()
+# print(l)
+# for decending order
+# l.sort(reverse=True)
+# print(l)
+
+# reverse method
+# l.reverse()
+# print(l)
+
+# index method
+# print(l.index(1))
+
+# count method
+# print(l.count(1))
+
+# copy method (we can copy of aur orignal list and we ca change the obj of our new list but not change in orignal obj)
+ 
+# m = l.copy()
+# m[0]=0
+# print(m)
+
+# insert method
+
+# l.insert(1,899)
+# print(l)
+
+# extend method
+# m = [900,1000,1100]
+# # l.extend(m)
+# # or
+# k = l+m
+# print(k)
+
+# tuples its like a list but we cant change the obj its const
+tup = (1,2,7,8, "Apple")
+# tup =(1,)
+print(type(tup), tup)
+print(tup[0])
+print(len(tup))
+print(tup[-1])
+print(tup[3])
+
+if 8 in tup:
+    print("Yes 8 is present in this tuple")
 
