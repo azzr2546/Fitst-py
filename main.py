@@ -536,9 +536,9 @@
 
 # LIST METHODS
 
-# append method is for add the obj in last index
-l = [12,10,63,1,2,3,4,6,1,1,1]
-print(l)
+# # append method is for add the obj in last index
+# l = [12,10,63,1,2,3,4,6,1,1,1]
+# print(l)
 # l.append(9)
 # print(l)
 
@@ -578,14 +578,145 @@ print(l)
 # print(k)
 
 # tuples its like a list but we cant change the obj its const
-tup = (1,2,7,8, "Apple")
-# tup =(1,)
-print(type(tup), tup)
-print(tup[0])
-print(len(tup))
-print(tup[-1])
-print(tup[3])
+# tup = (1,2,7,8, "Apple")
+# # tup =(1,)
+# print(type(tup), tup)
+# print(tup[0])
+# print(len(tup))
+# print(tup[-1])
+# print(tup[3])
 
-if 8 in tup:
-    print("Yes 8 is present in this tuple")
+# if 8 in tup:
+#     print("Yes 8 is present in this tuple")
+
+# countries = ("Spain", "Italy", "India", "England", "Germany")
+# temp = list(countries)
+# temp.append("Russia")
+# temp.pop(3)
+# temp[2] = "Finland"
+# countries = tuple(temp)
+# print(countries)
+
+# countries = ("Pakistan", "Afghanistan", "Bangladesh", "SriLanka")
+# countries2 = ("Vietnam", "India", "China")
+# southEastAsia = countries + countries2
+# print(southEastAsia)
+
+# tuple1 = (0,1,2,34,2,31,1,3,2,3)
+# # res = tuple1.count(3)
+# # res = tuple1.index(3)
+# res = len(tuple1)
+# # res = tuple1.index(3,4,8)
+# # print('Count of 3 in tuple1 is: ', res)
+# # print('index of 3 in tuple1 is: ', res)
+# # print('index of 3 in tuple1 is: ', res)
+# print('length of tuple1 is: ', res)
+
+
+# Exercise 2
+
+# import time
+# timestamp = time.strftime('%H:%M:%S')
+# print(timestamp)
+# timestamp = time.strftime('%H')
+# print(timestamp)
+# timestamp = time.strftime('%M')
+# print(timestamp)
+# timestamp = time.strftime('%S')
+# print(timestamp)
+
+# import time
+# t = time.strftime('%H:%M:%S')
+# hour =int(time.strftime('%H'))
+# hour =int(input("Enter hour: "))
+# print(hour)
+
+# if(hour>=0 and hour<12):
+#     print("Good Morning Sir!")
+# elif(hour>=12 and hour<17):
+#     print("Good Aftenoon Sir!")
+# else:
+#     print("Good Night Sir!")
+
+
+# f-string(STRING FORMATTING)
+
+# letter = "Hey my name is {} and I am from {}"
+# country = "India"
+# name = "Apple"
+
+# print(letter.format(country,name))
+# print(letter.format(name,country))
+
+# letter = "Hey my name is {1} and I am from {0}"
+# country = "India"
+# name = "Apple"
+
+# print(letter.format(country,name))
+# print(f"Hey my name is {name} and I am from {country}")
+
+# for only 2 decimals and it will round out
+
+# txt = "For only {price:.2f} dollars"
+# print(txt.format(price = 49.09999))
+
+# price = 49.09999
+# txt = f"For only {price:.2f} dollars!"
+# print(txt)
+
+# convert to string
+
+# print(f"{2*30}")
+# print(type(f"{2*30}"))
+
+# Docstring in python
+
+# def square(n):
+#     # it is docstring not a comment
+#     '''Takes in a number n, return the square of n'''
+#     print(n**2)
+# square(5)
+# # if we want to show the docstring
+# print(square.__doc__)
+
+
+# PEP 8
+
+# if we open terminal and first we run "python" and then we run "import this" the we see a poem its call PEP 8
+
+
+# Recursion in python
+
+# factorial(7) = 7*6*5*4*3*2*1
+# factorial(6) = 6*5*4*3*2*1
+# factorial(5) = 5*4*3*2*1
+# factorial(4) = 4*3*2*1
+# factorial(3) = 3*2*1
+# factorial(2) = 2*1
+# factorial(1) = 1
+# factorial(0) = 1
+
+# factorial(n) = n * factorial(n-1)
+
+# def factorial(n):
+#     if(n==0 or n==1):
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+# print(factorial(3))
+# print(factorial(4))
+# print(factorial(5))
+
+# how is it works
+# 5 * factorial(5-1=4)
+# 5 * 4 * factorial(4-1=3)
+# 5 * 4 * 3 * factorial(3-1=2)
+# 5 * 4 * 3 * 2 * factorial(2-1=1)
+# 5 * 4 * 3 * 2 * 1
+
+
+
+
+
+
 
